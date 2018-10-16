@@ -15,7 +15,6 @@ export function getRecommend() {
 }
 
 export function getDiscList() {
-  //请求node服务，获取数据
   const url = '/api/getDiscList'
 
   const data = Object.assign({}, commonParams, {
