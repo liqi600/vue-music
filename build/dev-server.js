@@ -26,6 +26,7 @@ var app = express()
 var apiRoutes = express.Router()
 
 apiRoutes.get('/getDiscList', function (req, res) {
+  //获取qq后台数据，通过服务器可以跨过条件限制
   var url = 'https://c.y.qq.com/splcloud/fcgi-bin/fcg_get_diss_by_tag.fcg'
   axios.get(url, {
     headers: {
